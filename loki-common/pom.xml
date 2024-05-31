@@ -8,7 +8,7 @@
         <artifactId>loki-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>odin-common</artifactId>
+  <artifactId>loki-common</artifactId>
 
   <properties>
         <thor.version>0.0.1-SNAPSHOT</thor.version>
