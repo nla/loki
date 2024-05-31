@@ -2,10 +2,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>au.gov.nla.loki</groupId>
-  <artifactId>loki-common</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Loki Common</name>
+
+  <parent>
+        <groupId>au.gov.nla.loki</groupId>
+        <artifactId>loki-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>odin-common</artifactId>
 
   <properties>
         <thor.version>0.0.1-SNAPSHOT</thor.version>
@@ -20,7 +23,7 @@
 	  <dependency>
 	  	<groupId>au.gov.nla.thor</groupId>
 	  	<artifactId>thor-common</artifactId>
-	  	<version>0.0.1-SNAPSHOT</version>
+	  	<version>{thor.version}</version>
 	  </dependency>
   </dependencies>
 </project>
