@@ -5,7 +5,7 @@
   <parent>
         <groupId>au.gov.nla.loki</groupId>
         <artifactId>loki-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
   </parent>
   <artifactId>loki-ui</artifactId>
 	
@@ -18,7 +18,7 @@
 	<dependency>
 	    <groupId>au.gov.nla.loki</groupId>
 	    <artifactId>loki-common</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+	    <version>${revision}</version>
 	</dependency>
  </dependencies>
 </project>
