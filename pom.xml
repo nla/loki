@@ -1,0 +1,33 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>au.gov.nla.loki</groupId>
+    <artifactId>loki-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <thor.version>0.0.1-SNAPSHOT</thor.version>
+    </properties>
+
+    <modules>
+        <module>loki-common</module>
+        <module>loki-server-util</module>
+        <module>loki-server</module>
+        <module>loki-ui</module>
+    </modules>
+         
+    <distributionManagement>
+        <repository>
+            <id>nla-public-releases</id>
+            <url>https://dev.nla.gov.au/nexus/content/repositories/nla-public/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nla-public-snapshots</id>
+            <url>https://dev.nla.gov.au/nexus/content/repositories/nla-public-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
