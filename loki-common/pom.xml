@@ -23,7 +23,7 @@
 	  <dependency>
 	  	<groupId>au.gov.nla.thor</groupId>
 	  	<artifactId>thor-common</artifactId>
-	  	<version>{thor.version}</version>
+	  	<version>${thor.version}</version>
 	  </dependency>
   </dependencies>
 </project>
