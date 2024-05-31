@@ -6,7 +6,11 @@
   <artifactId>loki-common</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Loki Common</name>
-  
+
+  <properties>
+        <thor.version>0.0.1-SNAPSHOT</thor.version>
+  </properties>
+	
   <dependencies>
 	  <dependency>
 	    <groupId>org.gwtproject</groupId>
