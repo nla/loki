@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>au.gov.nla.loki</groupId>
+  <artifactId>loki-server</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Loki Server</name>
+  
+  <dependencies>
+	  <dependency>
+	    <groupId>au.gov.nla.loki</groupId>
+	    <artifactId>loki-common</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	   <dependency>
+	    <groupId>au.gov.nla.loki</groupId>
+	    <artifactId>loki-server-util</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	   <dependency>
+	    <groupId>au.gov.nla.thor</groupId>
+	    <artifactId>thor-storage</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	  <dependency>
+	    <groupId>org.gwtproject</groupId>
+	    <artifactId>gwt-servlet</artifactId>
+	    <version>2.11.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.gwtproject</groupId>
+	    <artifactId>gwt-user</artifactId>
+	    <version>2.11.0</version>
+	  </dependency>
+  </dependencies>
+  
+</project>
