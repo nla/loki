@@ -6,7 +6,7 @@
   <parent>
         <groupId>au.gov.nla.loki</groupId>
         <artifactId>loki-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>loki-server</artifactId>
 
@@ -18,12 +18,12 @@
 	  <dependency>
 	    <groupId>au.gov.nla.loki</groupId>
 	    <artifactId>loki-common</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+	    <version>0.0.2-SNAPSHOT</version>
 	   </dependency>
 	   <dependency>
 	    <groupId>au.gov.nla.loki</groupId>
 	    <artifactId>loki-server-util</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+	    <version>0.0.2-SNAPSHOT</version>
 	   </dependency>
 	   <dependency>
 	    <groupId>au.gov.nla.thor</groupId>
