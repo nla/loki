@@ -11,7 +11,7 @@
   <artifactId>loki-common</artifactId>
 
   <properties>
-        <thor.version>0.0.1-SNAPSHOT</thor.version>
+        <thor.version>0.0.2-SNAPSHOT</thor.version>
   </properties>
 	
   <dependencies>
