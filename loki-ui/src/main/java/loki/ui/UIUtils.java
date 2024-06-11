@@ -17,7 +17,7 @@ public class UIUtils
     
     public static void log(String message)
     {
-        GWT.log(message);
+        logMessage(message);
     }
     
     /**
@@ -27,9 +27,9 @@ public class UIUtils
      * @param e             The stack trace to log.
      */
     
-    public static void log(String message, Throwable e)
+    public static void log(Throwable e)
     {
-        GWT.log(message, e);
+        logMessage(printThrowable(e));
     }
     
     /**
@@ -42,6 +42,42 @@ public class UIUtils
     {
         logObject(object);
     }
+    
+    /**
+     * Converts the specified throwable to a string representation, including its stack trace.
+     * 
+     * @param e     The throwable to print.
+     * @return      A string representation of the throwable.
+     */
+    
+    public static String printThrowable(Throwable e)
+    {
+        StringBuilder b = new StringBuilder();
+        printThrowable(b, e);
+        return b.toString();
+    }
+    
+    private static void printThrowable(StringBuilder b, Throwable e)
+    {
+        if(e.getMessage()!=null)
+        {
+            b.append(e.getMessage()+":\n");
+        }
+        for(StackTraceElement element: e.getStackTrace())
+        {
+            b.append("\tat "+element.getClassName()+"."+element.getMethodName()+"("+element.getFileName()+":"+element.getLineNumber()+")\n");
+        }
+        if(e.getCause()!=null)
+        {
+            b.append("Caused by:\n");
+            printThrowable(b, e.getCause());
+        }
+    }
+    
+    private static native void logMessage(String message)
+    /*-{
+        console.log(message);
+    }-*/;
     
     private static native void logObject(JavaScriptObject object)
     /*-{
