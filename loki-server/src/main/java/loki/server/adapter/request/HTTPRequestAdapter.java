@@ -70,6 +70,7 @@ public class HTTPRequestAdapter<Ops extends ServerOperations> implements Adapter
         }
 
         server.start();
+        ServerUtils.log("HTTP Request Adapter Initialised @ "+hostName+":"+port);
     }
 
     public void terminate()
